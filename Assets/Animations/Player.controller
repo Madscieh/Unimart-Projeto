@@ -67,7 +67,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AndandoH
+  m_Name: Horizontal
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -83,7 +83,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5aae923c342beb548bf387f7bf20efd4, type: 2}
+  m_Motion: {fileID: 7400000, guid: a02b9e2f96efbc74d96683d1bd14780c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -255,7 +255,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AndandoVCima
+  m_Name: VerticalCima
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -269,7 +269,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: fd1c473893046a74fa5a14a3d085fd88, type: 2}
+  m_Motion: {fileID: 7400000, guid: 090ece1196da6c74baa7166accc85b1c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -282,7 +282,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AndandoVBaixo
+  m_Name: VerticalBaixo
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -296,7 +296,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c9833a9f453e6574a9414222a4f31524, type: 2}
+  m_Motion: {fileID: 7400000, guid: cc922b4401216864985347f2e107513f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
