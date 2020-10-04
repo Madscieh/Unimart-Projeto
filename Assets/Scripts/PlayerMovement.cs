@@ -26,9 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Gives a value between -1 and 1
-        horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
-        vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
         anim.SetFloat("VelocidadeH", Mathf.Abs(horizontal));
         anim.SetFloat("VelocidadeV", vertical);
         if (horizontal < 0)
@@ -39,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (horizontal != 0 && vertical != 0) // Check for diagonal movement
+        // Check for diagonal movement
+        if (horizontal != 0 && vertical != 0) 
         {
             // limit movement speed diagonally, so you move at 70% speed
             horizontal *= moveLimiter;

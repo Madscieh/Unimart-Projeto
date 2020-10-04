@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class StickPickup : MonoBehaviour
 {
-    public GameObject stick, stickPickup,spaceInteract;
-    //public GameObject stickPickup;
+    Animator anim;
 
+    //public GameObject stickPickup;
+    public GameObject stick, stickPickup, spaceInteract;
+    public GameObject player;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -14,6 +22,7 @@ public class StickPickup : MonoBehaviour
             Destroy(stickPickup);
             stick.SetActive(true);
             spaceInteract.SetActive(true);
+            player.GetComponent<Animator>().SetBool("Vassoura", true);
             //StartCoroutine(SpaceActivate());
         }
 
