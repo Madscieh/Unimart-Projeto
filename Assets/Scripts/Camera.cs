@@ -7,12 +7,6 @@ public class Camera : MonoBehaviour
     [SerializeField]
     private Transform ancoraCamera;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -82,6 +76,43 @@ public class Camera : MonoBehaviour
                 Mathf.Clamp(ancoraCamera.position.y, 72.74f, 87.68f),
                 transform.position.z);
         }
+        // Doces 1
+        else if (ancoraCamera.position.x < 0f && ancoraCamera.position.x > -20f &&
+                 ancoraCamera.position.y < 90f && ancoraCamera.position.y > 70f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, -14.92f, -5.99f),
+                Mathf.Clamp(ancoraCamera.position.y, 72.74f, 87.68f),
+                transform.position.z);
+        }
+        // Doces 2
+        else if (ancoraCamera.position.x < 0f && ancoraCamera.position.x > -20f &&
+                 ancoraCamera.position.y < 120.68f && ancoraCamera.position.y > 70f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, -14.91f, -5.83f),
+                Mathf.Clamp(ancoraCamera.position.y, 102.73f, 117.7f),
+                transform.position.z);
+        }
+        // Doces 3
+        else if (ancoraCamera.position.x < 29.14f && ancoraCamera.position.x > 8.06f &&
+                 ancoraCamera.position.y < 120.68f && ancoraCamera.position.y > 102.7f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 14.07f, 23.2f),
+                Mathf.Clamp(ancoraCamera.position.y, 105.65f, 117.7f),
+                transform.position.z);
+        }
+        // Doces - Save
+        else if (ancoraCamera.position.x < 54.19f && ancoraCamera.position.x > 33.06f &&
+                 ancoraCamera.position.y < 120.68f && ancoraCamera.position.y > 102.88f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 39.12f, 49.11f),
+                Mathf.Clamp(ancoraCamera.position.y, 107.7f, 117.65f),
+                transform.position.z);
+        }
+
         // Jardim 2
         else if (ancoraCamera.position.x < 49f && ancoraCamera.position.x > 33f &&
                  ancoraCamera.position.y < 95f && ancoraCamera.position.y > 77.7f)
