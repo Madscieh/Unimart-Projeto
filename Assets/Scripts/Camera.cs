@@ -169,6 +169,62 @@ public class Camera : MonoBehaviour
                 Mathf.Clamp(ancoraCamera.position.y, 71.74f, 88.67f),
                 transform.position.z);
         }
+        // Dungeon - Salgados
+        // Labirinto
+        else if (ancoraCamera.position.x < 175f && ancoraCamera.position.x > 131f &&
+                 ancoraCamera.position.y < 51f && ancoraCamera.position.y > 37f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 136.62f, 168.19f),
+                Mathf.Clamp(ancoraCamera.position.y, 40.01f, 47.95f),
+                transform.position.z);
+        }
+
+        // Sala 1 - Pequena
+        else if (ancoraCamera.position.x < 175f && ancoraCamera.position.x > 161f &&
+                 ancoraCamera.position.y < 78f && ancoraCamera.position.y > 68f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 166.65f, 169.2f),
+                Mathf.Clamp(ancoraCamera.position.y, 71f, 74.98f),
+                transform.position.z);
+        }
+        // Sala 2 - Grande
+        else if (ancoraCamera.position.x < 202f && ancoraCamera.position.x > 177f &&
+                 ancoraCamera.position.y < 106f && ancoraCamera.position.y > 81f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 182.86f, 197.24f),
+                Mathf.Clamp(ancoraCamera.position.y, 85.99f, 102.87f),
+                transform.position.z);
+        }
+        // Sala 3 - Média
+        else if (ancoraCamera.position.x < 226f && ancoraCamera.position.x > 207.5f &&
+                 ancoraCamera.position.y < 66f && ancoraCamera.position.y > 52f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 213.6f, 221.2f),
+                Mathf.Clamp(ancoraCamera.position.y, 55f, 63f),
+                transform.position.z);
+        }
+        // Sala 4 - Média (SUL)
+        else if (ancoraCamera.position.x < 198f && ancoraCamera.position.x > 179f &&
+                 ancoraCamera.position.y < 28f && ancoraCamera.position.y > 12f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 184.5f, 193.3f),
+                Mathf.Clamp(ancoraCamera.position.y, 15f, 22.95f),
+                transform.position.z);
+        }
+        // Corredor
+        else if (ancoraCamera.position.x < 192f && ancoraCamera.position.x > 185f &&
+                 ancoraCamera.position.y < 74f && ancoraCamera.position.y > 34f)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(ancoraCamera.position.x, 188.7f, 189f),
+                Mathf.Clamp(ancoraCamera.position.y, 37f, 71f),
+                transform.position.z);
+        }
 
         // Presente - Limpeza
         // Banheiro

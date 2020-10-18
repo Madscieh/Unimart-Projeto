@@ -35,6 +35,7 @@ public class PlayerCombat : MonoBehaviour
         foreach(Collider2D inimigo in acerto)
         {
             inimigo.GetComponent<Monstro>().LevaDano(dano);
+            Debug.Log("Acertou");
         }
     }
 
